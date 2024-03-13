@@ -12,10 +12,10 @@ const loader = document.querySelector('.loader');
 
 form.addEventListener('submit', findImage);
 
-photoList.innerHTML = '';
-
 function findImage(e) {
   e.preventDefault();
+
+  photoList.innerHTML = '';
 
   const userSearch = e.target.elements.query.value.trim();
 
